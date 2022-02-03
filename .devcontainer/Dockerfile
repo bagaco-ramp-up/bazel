@@ -14,6 +14,10 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y pkg-config zip g++ zlib1g-dev unzip python \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
 
+# [Optional] Uncomment this section to install additional OS packages.
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends python3-pip
+
 # Install Bazel
 ARG BAZELISK_VERSION=v1.10.1
 ARG BAZELISK_DOWNLOAD_SHA=dev-mode
@@ -26,7 +30,3 @@ ARG BUILDIFIER_SHA=dev-mode
 RUN curl -fSsL -o /usr/local/bin/buildifier https://github.com/bazelbuild/buildtools/releases/download/${BUILDIFIER_VERSION}/buildifier-linux-amd64 \
     && ([ "${BUILDIFIER_SHA}" = "dev-mode" ] || echo "${BUILDIFIER_SHA} */usr/local/bin/buildifier" | sha256sum --check - ) \
     && chmod 0755 /usr/local/bin/buildifier
-
-# [Optional] Uncomment this section to install additional OS packages.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
