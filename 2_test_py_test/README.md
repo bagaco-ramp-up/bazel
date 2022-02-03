@@ -1,0 +1,2 @@
+- Create a python test target (`py_test`) that runs the tests in the script.
+- Tests can be run via `bazel test`
