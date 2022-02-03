@@ -21,6 +21,7 @@
 		"ms-python.python",
 		"redhat.vscode-yaml",
 		"vscode-icons-team.vscode-icons",
+		"ms-vsliveshare.vsliveshare",
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
