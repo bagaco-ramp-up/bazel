@@ -5,7 +5,6 @@ py_test(
         "data/response_mutation.json",
         "data/response_pr.json",
     ],
-    # imports = ["src/"],
     deps = [
         "//src:comment_library",
         "//test:mock_response",

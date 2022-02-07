@@ -1,0 +1,10 @@
+#######################
+# BUILD CONFIGURATION #
+#######################
+
+build --profile=profile.json
+build --explain=explain.txt
+build:pip --define dep_installer=pip
+build:poetry --define dep_installer=poetry
+
+test --nocache_test_results

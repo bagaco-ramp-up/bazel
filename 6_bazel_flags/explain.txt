@@ -1,0 +1,10 @@
+Build options: --define='dep_installer=pip' --explain=/workspaces/bazel/6_bazel_flags/explain.txt
+Executing action 'Creating source manifest for //test:test_comment_on_pr': no entry in the cache (action is new).
+Executing action 'BazelWorkspaceStatusAction stable-status.txt': unconditional execution is requested.
+Executing action 'Creating runfiles tree bazel-out/k8-fastbuild/bin/test/test_comment_on_pr.runfiles': no entry in the cache (action is new).
+Executing action 'Expanding template external/bazel_tools/tools/python/py3wrapper.sh': no entry in the cache (action is new).
+Executing action 'Expanding template test/test_comment_on_pr': no entry in the cache (action is new).
+Executing action 'Creating source manifest for //:comment_on_pr': no entry in the cache (action is new).
+Executing action 'Expanding template comment_on_pr': no entry in the cache (action is new).
+Executing action 'Creating runfiles tree bazel-out/k8-fastbuild/bin/comment_on_pr.runfiles': no entry in the cache (action is new).
+Executing action 'Testing //test:test_comment_on_pr': no entry in the cache (action is new).
